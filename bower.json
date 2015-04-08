@@ -19,6 +19,7 @@
     "font-awesome": "~4.3.0"
   },
   "main": [
-    "./dist/angular-atomic-notify.min.js"
+    "./dist/angular-atomic-notify.min.js",
+    "./dist/angular-atomic-notify.min.css"
   ]
 }
