@@ -1,0 +1,13 @@
+body {
+    font-family: Helvetica Neue;
+    font-size: 14px;
+}
+
+.sample a {
+    color: #000;
+    float: left;
+    clear: both;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    font-size: 16px;
+}

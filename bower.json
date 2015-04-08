@@ -1,0 +1,24 @@
+{
+  "name": "angular-atomic-notify",
+  "version": "1.0.0",
+  "homepage": "https://github.com/maxigimenez/angular-atomic-notify",
+  "authors": [
+    "Maxi Gimenez <gimenez.maxi@gmail.com>"
+  ],
+  "description": "Atomic notifications for your Angular project!",
+  "keywords": [
+    "angular",
+    "notification",
+    "atomic",
+    "notifications"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "~1.3.15",
+    "jquery": "~2.1.3",
+    "font-awesome": "~4.3.0"
+  },
+  "main": [
+    "./dist/angular-atomic-notify.min.js"
+  ]
+}

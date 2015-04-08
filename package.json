@@ -1,0 +1,25 @@
+{
+  "name": "angular-atomic-notify",
+  "version": "1.0.0",
+  "description": "Atomic notifications for your Angular project!",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxigimenez/angular-atomic-notify.git"
+  },
+  "author": "Maxi Gimenez <gimenez.maxi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxigimenez/angular-atomic-notify/issues"
+  },
+  "homepage": "https://github.com/maxigimenez/angular-atomic-notify",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "jshint-stylish": "^0.2.0",
+    "load-grunt-tasks": "~0.2.0"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="sample">
+<head>
+    <title>angular-atomic-notify sample!</title>
+
+    <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../dist/angular-atomic-notify.min.css">
+    <link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+    <ng-atomic-notify></ng-atomic-notify>
+
+    <div ng-controller="HomeController" class="sample">
+        <a href ng-click="simple()">Display a really simple notification :/</a> <br />
+        <a href ng-click="warning()">Woooo warning!!!!</a> <br />
+        <a href ng-click="success()">Display a really cool success notification :)</a> <br />
+        <a href ng-click="error()">Display a really sad error notification :(</a><br/>
+        <a href ng-click="custom()">Custom - With other icon</a>
+    </div>
+
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../dist/angular-atomic-notify.min.js"></script>
+    <script type="text/javascript" src="sample.js"></script>
+
+</body>
+</html>
