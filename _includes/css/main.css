@@ -355,3 +355,7 @@ nav ul li:hover, nav ul li.active {
     column-count:         2;
   }
 }
+
+.atomic-notify .atomic-notify-item .body>p {
+  margin: 0px !important;
+}
