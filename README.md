@@ -14,7 +14,7 @@ We are using this libraries for the sample, note that jQuery is used for `angula
 
 ## Demo
 
-Open `sample/index.html` you can find a complete sample of how the notifications works.
+**- [Online demo](http://maxigimenez.github.io/angular-atomic-notify/)**
 
 ## Install
 
