@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" ng-app="sample">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atomic notifications for Angular apps</title>
+	<meta name="keywords" content="atomic notifications, growl, angular js, github, grow angular, notifications angular">
+	<meta name="description" content="Simple atomic growl notifications for angular js">
+  <link rel="stylesheet" href="combo.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="angular-atomic-notify.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+</head>
+<body>
+  
+  <ng-atomic-notify></ng-atomic-notify>
+  
+  <div id="main">
+  
+    
+      
+      <div id="intro" class="section p-intro" ng-controller="HomeController">
+        
+        <div class="container center">
+          <h3 class="text-blue" id="yeah-an-open-source-project"><em>yeah! an open source project</em></h3>
+
+<h1 class="text-blue" id="atomic-notifications-for-angularjs">atomic notifications for angular.js!</h1>
+
+<p>…are simple but strong growl notifications to be used in any angular project.</p>
+
+<p>You wan to start using it? Go <a href="https://github.com/maxigimenez/angular-atomic-notify">fork me on github!</a></p>
+
+<p>
+<a class="github-button" href="https://github.com/maxigimenez/angular-atomic-notify" data-icon="octicon-eye" data-style="mega" data-count-href="/maxigimenez/angular-atomic-notify/watchers" data-count-api="/repos/maxigimenez/angular-atomic-notify#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch maxigimenez/angular-atomic-notify on GitHub">Watch</a>
+
+<a class="github-button" href="https://github.com/maxigimenez/angular-atomic-notify" data-icon="octicon-star" data-style="mega" data-count-href="/maxigimenez/angular-atomic-notify/stargazers" data-count-api="/repos/maxigimenez/angular-atomic-notify#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star maxigimenez/angular-atomic-notify on GitHub">Star</a>
+
+<a class="github-button" href="https://github.com/maxigimenez/angular-atomic-notify/fork" data-icon="octicon-git-branch" data-style="mega" data-count-href="/maxigimenez/angular-atomic-notify/network" data-count-api="/repos/maxigimenez/angular-atomic-notify#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork maxigimenez/angular-atomic-notify on GitHub">Fork</a>
+</p>
+
+<!-- Place this tag right after the last button or just before your close body tag. -->
+<script async="" defer="" id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+<p><span id="forkongithub">
+  <a href="https://github.com/maxigimenez/angular-atomic-notify" class="bg-blue">
+    Fork me on GitHub
+  </a>
+</span></p>
+
+        </div>
+      </div>
+    
+      
+      <div id="demo" class="section p-demo" ng-controller="HomeController">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rocket fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Demo</h5>
+        </div>
+        
+        <div class="container ">
+          <h4 id="demo">Demo</h4>
+
+<h1 id="quick-samples">quick samples.</h1>
+
+<p>Here you can find the 5 types of notifications that you can use in your own project, enjoy it!</p>
+
+<ul>
+  <li><a href="" ng-click="simple();">Let’s show something cool!</a></li>
+  <li><a href="" ng-click="warning();">Seems to be like you are close to break the internet!</a></li>
+  <li><a href="" ng-click="error();">Yes… you broke the internets!</a></li>
+  <li><a href="" ng-click="success();">Woho! you fix the internet!</a></li>
+  <li><a href="" ng-click="custom();">Let’s mix some settings!</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    
+      
+      <div id="install" class="section p-install" ng-controller="HomeController">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-cloud-download fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">install</h5>
+        </div>
+        
+        <div class="container ">
+          <h2 id="using-bower">Using bower</h2>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-text" data-lang="text">1</code></pre></div></td><td class="code"><div class="highlight"><pre>bower install angular-atomic-notify
+</pre></div>
+</td></tr></table>
+
+
+        </div>
+      </div>
+    
+      
+      <div id="usage" class="section p-usage" ng-controller="HomeController">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-plug fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">usage</h5>
+        </div>
+        
+        <div class="container ">
+          <ul>
+  <li>Include in your project</li>
+</ul>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-text" data-lang="text">1
+2</code></pre></div></td><td class="code"><div class="highlight"><pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;src/angular-atomic-notify.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;src/angular-atomic-notify.js&quot;&gt;&lt;/script&gt;
+</pre></div>
+</td></tr></table>
+
+<ul>
+  <li>Include the module into your own application:</li>
+</ul>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-text" data-lang="text">1</code></pre></div></td><td class="code"><div class="highlight"><pre>angular.module(&#39;sample&#39;, [&#39;atomic-notify&#39;]);
+</pre></div>
+</td></tr></table>
+
+<ul>
+  <li>Add the directive to your project:</li>
+</ul>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-text" data-lang="text">1</code></pre></div></td><td class="code"><div class="highlight"><pre>&lt;ng-atomic-notify&gt;&lt;/ng-atomic-notify&gt;
+</pre></div>
+</td></tr></table>
+
+<ul>
+  <li>you can customize 100% the template with your own HTML</li>
+</ul>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-text" data-lang="text">1</code></pre></div></td><td class="code"><div class="highlight"><pre>&lt;ng-atomic-notify custom-template=&quot;custom.html&quot;&gt;&lt;/ng-atomic-notify&gt;
+</pre></div>
+</td></tr></table>
+
+        </div>
+      </div>
+    
+      
+      <div id="code" class="section p-code" ng-controller="HomeController">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-code fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">code</h5>
+        </div>
+        
+        <div class="container ">
+          <h2 id="methods">Methods</h2>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-html" data-lang="html">1
+2
+3
+4</code></pre></div></td><td class="code"><div class="highlight"><pre>atomicNotify.info(message, delay);
+atomicNotify.error(message, delay);
+atomicNotify.success(message, delay);
+atomicNotify.warning(message, delay);
+</pre></div>
+</td></tr></table>
+
+<ul>
+  <li>using <code>atomicNotify.custom</code> you can specifc the icon that you want to use in the notification:</li>
+</ul>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-html" data-lang="html">1</code></pre></div></td><td class="code"><div class="highlight"><pre>atomicNotifyService.custom(type, message, iconClass, delay);
+</pre></div>
+</td></tr></table>
+
+<h2 id="provider">Provider</h2>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-html" data-lang="html">1
+2
+3
+4</code></pre></div></td><td class="code"><div class="highlight"><pre>.config([&#39;atomicNotifyProvider&#39;, function(atomicNotifyProvider){
+    atomicNotifyProvider.setDefaultDelay(5000);
+    atomicNotifyProvider.useIconOnNotification(true);
+}])
+</pre></div>
+</td></tr></table>
+
+        </div>
+      </div>
+    
+
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        
+        
+<p>Design by Tim O’Brien <a href="http://t413.com/">t413.com</a>
+—
+<a href="https://github.com/t413/SinglePaged">SinglePaged theme</a>
+—
+this site is <a href="https://github.com/maxigimenez/angular-atomic-notify">open source</a></p>
+
+
+      </div>
+    </div>
+  </div>
+
+<!--  -->
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="angular-atomic-notify.min.js"></script>
+<script src="site.js"></script>
+<script src="sample.js"></script>
+</html>
