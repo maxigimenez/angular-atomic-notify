@@ -28,14 +28,19 @@ angular
 
         var exports = {};
 
-        var directive = angular.element('ng-atomic-notify').isolateScope();
+        var getDirective = function(){
+            return angular
+                .element('ng-atomic-notify')
+                .isolateScope();
+        };
 
         var displayNotify = function(options, delay){
-            directive.addItem({
-                type: options.type,
-                icon: ((atomicNotify.useicon) ? options.icon : false),
-                text: options.text
-            }, delay || atomicNotify.delay);
+            getDirective()
+                .addItem({
+                    type: options.type,
+                    icon: ((atomicNotify.useicon) ? options.icon : false),
+                    text: options.text
+                }, delay || atomicNotify.delay);
         };
 
         exports.success = function(message, delay){
