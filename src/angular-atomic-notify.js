@@ -87,7 +87,7 @@ angular
         return exports;
 
     }])
-    .directive('ngAtomicNotify', function($compile, $timeout){
+    .directive('ngAtomicNotify', ['$compile', '$timeout', function($compile, $timeout){
 
         var link = function($scope, element, attr){
             var template = '<div class="atomic-notify"><div class="atomic-notify-item" ng-repeat="item in items" ng-class="discoverClass(item)"><div class="icon" ng-if="item.icon"><i ng-class="item.icon"></i></div><div class="body"><p>{{item.text}}</p></div><button type="button" class="close" ng-click="dismiss(item)">&times;</button></div></div>';
@@ -128,4 +128,4 @@ angular
             controller: controller
         };
 
-    });
+    }]);
