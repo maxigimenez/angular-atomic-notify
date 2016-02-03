@@ -4,7 +4,7 @@ angular
     .module('atomic-notify', [])
     .config(['$provide', function($provide){
         $provide.provider('atomicNotify', function(){
-            
+
             var settings = {
                 delay: 0,
                 useicon: true
@@ -125,7 +125,7 @@ angular
             scope: {},
             restrict: 'E',
             link: link,
-            controller: controller
+            controller: ['$scope', controller]
         };
 
     }]);
