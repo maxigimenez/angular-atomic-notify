@@ -56,10 +56,10 @@ Add the directive to your project:
 ### Methods
 
 ```JavaScript
-atomicNotify.info(message, delay);
-atomicNotify.error(message, delay);
-atomicNotify.success(message, delay);
-atomicNotify.warning(message, delay);
+atomicNotifyService.info(message, delay);
+atomicNotifyService.error(message, delay);
+atomicNotifyService.success(message, delay);
+atomicNotifyService.warning(message, delay);
 ```
 
 using `atomicNotify.custom` you can specifc the icon that you want to use in the notification:
